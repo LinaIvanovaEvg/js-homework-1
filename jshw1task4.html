@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+<body>
+<script>
+        
+    if (confirm ('Хотите ввести название блока?') == false)
+    {alert ('Класс не присвоен')}
+    else 
+    {let block = prompt ('Введите название блока')
+        if (confirm ('Хотите ввести название элемента?')==false)
+        {alert(block)}
+        else
+        {let element = prompt ('Введите название элемента')
+           if (confirm ('Хотите ввести название модификатора?')==true)
+           {modi = prompt ('Введите название модификатора')
+            alert(block+element+modi)}
+           else { alert(block+element)}}}
+</script>
+</body>
+</html> 
